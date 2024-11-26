@@ -1,0 +1,521 @@
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+/* Corps de la page */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* En-tête */
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/luxury-jewelry-banner.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 4rem;
+    min-height: 450px; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.hero h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem; 
+    margin-top: 6rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #cccbcb;
+}
+/* ajustement catégories  */ 
+#produits .row {
+  display: flex;
+  align-items: stretch;
+}
+
+#produits .col-md-6 {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-container, .card {
+  flex: 1;
+}
+
+.card-body {
+  flex: 1;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Section Produits */
+#produits {
+    padding: 5rem 2rem;
+    background-color: #f8f8f8;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #c19a6b;
+}
+
+.btn-dark {
+    background-color: #c19a6b;
+    border: none;
+    font-family: 'Cinzel', serif;
+}
+
+.btn-dark:hover {
+    background-color: #a67848;
+}
+
+/* Style vidéo */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+/* Section Catégories */
+.categories-section {
+    padding: 2rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.category-card {
+    text-align: center;
+    flex: 1 1 calc(25% - 1rem);
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.category-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.category-card img:hover {
+    transform: scale(1.05);
+}
+
+.category-card h3 {
+    margin: 0.5rem 0;
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+}
+
+.category-card button {
+    background-color: #c19a6b;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+}
+
+.category-card button:hover {
+    background-color: #a67848;
+}
+
+/* Conteneur pour chaque produit */
+.product-container {
+  position: relative;
+  overflow: hidden; 
+  border-radius: 10px; 
+}
+
+/* Style de l'image */
+.product-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Effet zoom sur l'image au survol */
+.product-container:hover img {
+  transform: scale(1.1); 
+}
+
+/* Superposition (overlay) */
+.product-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Invisible par défaut */
+  transition: opacity 0.3s ease;
+}
+
+/* Affichage de l'overlay au survol */
+.product-container:hover .overlay {
+  opacity: 1;
+}
+
+/* Lien dans l'overlay */
+.product-container .overlay .product-link {
+  color: #fff; 
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  border-bottom: 2px solid #c19a6b; 
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Effet au survol du lien */
+.product-container .overlay .product-link:hover {
+  color: #c19a6b; 
+  border-color: #fff; 
+}
+
+/* Section Produits Promo */
+.produits-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.produits-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Cinzel', serif;
+}
+
+/* Conteneur des produits */
+.produits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Carte Produit */
+.produit-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 15px;
+}
+
+.produit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image du produit */
+.produit-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+/* Titre du produit */
+.produit-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Prix du produit */
+.produit-card .price {
+  font-size: 1.1rem;
+  color: #c19a6b;
+  margin-bottom: 15px;
+}
+
+/* Bouton Acheter */
+.produit-card .btn-acheter {
+  background-color: #c19a6b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.produit-card .btn-acheter:hover {
+  background-color: #a67c52;
+}
+/* survol image qui change */
+.product-img {
+    transition: all 0.3s ease; /* Ajoute une transition douce lors du changement d'image */
+}
+
+.product-img:hover {
+    content: url('../img/boucle-01.jpg'); /* Change l'image au survol */
+}
+
+
+/* Pied de page */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+    .nav-links a {
+        color: #585858;
+    }
+
+    #produits .container {
+        padding: 2rem;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
+    .category-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* Pour les petits écrans (mobile, moins de 768px) */
+@media (max-width: 767px) {
+    .produits-section .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* 1 produit par ligne sur les écrans de taille mobile */
+    .produits-section .col-12 {
+        flex: 0 0 100%; /* Chaque produit prend 100% de la largeur du conteneur */
+        max-width: 100%;
+    }
+}
+
+/* Style général des sections */
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+button {
+    background-color: #c19a6b;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a67848;
+}
+
+/* Section Nouveautés */
+.novelties-section {
+    padding: 5rem 2rem;
+    background-color: #f8f8f8;
+}
+
+.novelties {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.novelty-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.novelty-card img {
+    width: 100%;
+    height: auto;
+}
+
+.novelty-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.novelty-card p {
+    margin: 0 1rem;
+}
+
+.novelty-card button {
+    background-color: #c19a6b;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    margin: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.novelty-card button:hover {
+    background-color: #a67848;
+}
+/* Styles pour le menu mobile */
+.navbar .nav-links {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .navbar .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .menu-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Media query pour afficher le bouton de menu sur mobile */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block; 
+    }
+  
+    .nav-links {
+      display: none; 
+      flex-direction: column;
+      background-color: #fff; 
+      position: absolute;
+      top: 160px; 
+      left: 0;
+      width: 100%;
+    }
+  
+    .nav-links.active {
+      display: flex; /* Affiche les liens quand le menu est activé */
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
+  
+
+  /* Ajouter une ligne dorée sous "Collections" au survol sur PC */
+.navbar-nav .nav-link:hover {
+    border-bottom: 2px solid #a67848; 
+    padding-bottom: 5px; /* Espacement pour ne pas que la ligne soit collée au texte */
+  }
+  
+  /* Navbar mobile avec fond transparent */
+  .navbar {
+    background-color: transparent !important; /* Assurer que le fond reste transparent */
+  }
+  
+ 
+  
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #a67848; 
+  }
+  

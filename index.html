@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bijouterie de Luxe</title>
+  <link rel="icon" type="image/x-icon" href="/img/logo-diamond.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- En-tête -->
+  <header class="header">
+    <!-- Contenu de l'en-tête -->
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <div class="container">
+        <h1 class="logo">Bijoux Élégance</h1>
+      <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto nav-links">
+          <li class="nav-item">
+            <a class="nav-link" href="#Collections">Collections</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Catégories">Catégories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Promotions">Promotions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <div class="hero">
+      <h2>Découvrez l'Éclat de la Perfection</h2>
+      <p>Bijoux d'exception pour des moments inoubliables.</p>
+    </div>
+  </header>
+
+  <!-- Section Collections -->
+  <main>
+    <section id="Collections" class="py-5 bg-light">
+        <div class="container">
+            <!-- Titre de la section -->
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <h2 class="display-4 fw-bold">Nos Collections</h2>
+                    <p class="text-muted">Explorez nos créations raffinées conçues pour les moments d'exception.</p>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Partie vidéo à gauche -->
+                <div class="col-md-6 pt-4">
+                    <div class="video-container">
+                        <video autoplay muted loop playsinline class="w-100 rounded shadow">
+                            <source src="https://objects-prod.cdn.chopard.com/video/upload/q_auto/Campaigns/ice-cube-collection/Desktop/01-Intro/01-Ice_Cube-Intro--16x9.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas les vidéos HTML5.
+                        </video>
+                    </div>
+                </div>
+    
+                <!-- Partie produits à droite -->
+                <div class="col-md-6">
+                    <div class="row g-4">
+                        <!-- Produit 1 -->
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="./img/catégories.jpg" class="card-img-top" alt="Catégories">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title fs-4">Catégories</h3>
+                                    <p class="card-text text-muted">Des pièces élégantes qui subliment chaque tenue.</p>
+                                    <button class="btn btn-dark px-4 py-2">Découvrir</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Produit 2 -->
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="./img/Collections.jpg" class="card-img-top" alt="Collections">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title fs-4">Collections</h3>
+                                    <p class="card-text text-muted">Raffinés et intemporels pour tous les styles.</p>
+                                    <button class="btn btn-dark px-4 py-2">Découvrir</button>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+      
+    <!-- Section Les Catégories Iconiques -->
+    <section id="collections-iconiques" class="py-5 bg-light">
+        <div class="container">
+            <!-- Titre de la section -->
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <h2 class="display-4 fw-bold">Les Collections Iconiques</h2>
+                    <p class="text-muted">Découvrez nos créations les plus emblématiques, intemporelles et raffinées.</p>
+                </div>
+            </div>
+    
+            <!-- Carrousel Bootstrap multi-items -->
+            <div id="Catégories" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+               <!-- Slide 1 -->
+<div class="carousel-item active">
+    <div class="row">
+        <div class="col-3">
+            <div class="product-container">
+                <img src="./img/bijoux-1.webp" class="d-block w-100" alt="Collection bijoux 1">
+                <div class="overlay">
+                    <a href="page-produit-1.html" class="product-link">Bijoux 1</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="product-container">
+                <img src="./img/bijoux-2.webp" class="d-block w-100" alt="Collection bijoux 2">
+                <div class="overlay">
+                    <a href="page-produit-2.html" class="product-link">Bijoux 2</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="product-container">
+                <img src="./img/bijoux-3.webp" class="d-block w-100" alt="Collection bijoux 3">
+                <div class="overlay">
+                    <a href="page-produit-3.html" class="product-link">Bijoux 3</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="product-container">
+                <img src="./img/bijoux-4.webp" class="d-block w-100" alt="Collection bijoux 4">
+                <div class="overlay">
+                    <a href="page-produit-4.html" class="product-link">Bijoux 4</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 2 -->
+<div class="carousel-item">
+    <div class="row">
+        <div class="col-3">
+            <div class="product-container">
+                <img src="./img/bijoux-5.webp" class="d-block w-100" alt="Collection bijoux 5">
+                <div class="overlay">
+                    <a href="page-produit-5.html" class="product-link">Bijoux 5</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="product-container">
+                <img src="./img/bijoux-6.webp" class="d-block w-100" alt="Collection bijoux 6">
+                <div class="overlay">
+                    <a href="page-produit-6.html" class="product-link">Bijoux 6</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="product-container">
+                <img src="./img/bijoux-7.webp" class="d-block w-100" alt="Collection bijoux 7">
+                <div class="overlay">
+                    <a href="page-produit-7.html" class="product-link">Bijoux 7</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="product-container">
+                <img src="./img/bijoux-8.webp" class="d-block w-100" alt="Collection bijoux 8">
+                <div class="overlay">
+                    <a href="page-produit-8.html" class="product-link">Bijoux 8</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+                <!-- Contrôles de navigation -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+   
+
+ <!-- Section Produits promo -->
+<section id="Promotions" class="produits-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Découvrez nos produits Promo</h2>
+        <div class="row">
+            <!-- Produit 1 -->
+            <div class="col-12 col-md-3 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="./img/Pendentif-lien.jpg" class="card-img-top" alt="Produit 1 - Collier en or">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fs-5">Collier en or</h3>
+                        <p class="card-text text-muted">422,96 TND</p> 
+                        <button class="btn btn-dark px-4 py-2">Acheter</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 2 -->
+            <div class="col-12 col-md-3 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="./img/Bracelet.jpg" class="card-img-top" alt="Produit 2 - Bracelet argent">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fs-5">Bracelet argent</h3>
+                        <p class="card-text text-muted">292,97 TND</p> 
+                        <button class="btn btn-dark px-4 py-2">Acheter</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 3 -->
+            <div class="col-12 col-md-3 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="./img/Josephine.jpg" class="card-img-top" alt="Produit 3 - Bague diamant">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fs-5">Bague diamant</h3>
+                        <p class="card-text text-muted">812,46 TND</p> 
+                        <button class="btn btn-dark px-4 py-2">Acheter</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 4 -->
+            <div class="col-12 col-md-3 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                     <img src="./img/bouclr-01.png" class="card-img-top product-img" alt="Produit 4 - Boucles perles">
+                    <div class="card-body text-center">
+                       <h3 class="card-title fs-5">Boucles perles</h3>
+                          <p class="card-text text-muted">324,96 TND</p> 
+                          <button class="btn btn-dark px-4 py-2">Acheter</button>
+                    </div>
+               </div>
+           </div>
+           <!-- Produit 5 -->
+            <div class="col-12 col-md-3 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="./img/collier-d.png" class="card-img-top" alt="Produit 5 - Collier cristal">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fs-5">Collier cristal</h3>
+                        <p class="card-text text-muted">259,96 TND</p> 
+                        <button class="btn btn-dark px-4 py-2">Acheter</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 6 -->
+            <div class="col-12 col-md-3 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="./img/bracelt-cuir-fermoire-argent.webp" class="card-img-top" alt="Produit 6 - Bracelet cuir">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fs-5">Bracelet cuir</h3>
+                        <p class="card-text text-muted">194,96 TND</p> 
+                        <button class="btn btn-dark px-4 py-2">Acheter</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 7 -->
+            <div class="col-12 col-md-3 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="./img/Torsade.jpg" class="card-img-top" alt="Produit 7 - Bague en or blanc">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fs-5">Bague en or blanc</h3>
+                        <p class="card-text text-muted">649,96 TND</p> 
+                        <button class="btn btn-dark px-4 py-2">Acheter</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 8 -->
+            <div class="col-12 col-md-3 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="./img/083838_primary.webp" class="card-img-top" alt="Produit 8 - Boucles d'oreilles diamant">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fs-5">Boucles d'oreilles diamant</h3>
+                        <p class="card-text text-muted">1137,46 TND</p> 
+                        <button class="btn btn-dark px-4 py-2">Acheter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Section Informations Clés -->
+<section id="contact" class="services-section py-5 bg-light">
+    <div class="container">
+        <div class="row text-center">
+            <!-- Livraison offerte -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card border-0 shadow-sm h-100 p-4">
+                    <div class="card-body">
+                        <i class="fas fa-shipping-fast fa-3x text-dark mb-3"></i>
+                        <h3 class="card-title fs-4">Livraison offerte</h3>
+                        <p class="card-text text-muted">Profitez de la livraison gratuite pour toutes vos commandes sans minimum d'achat.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Paiement sécurisé -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card border-0 shadow-sm h-100 p-4">
+                    <div class="card-body">
+                        <i class="fas fa-lock fa-3x text-dark mb-3"></i>
+                        <h3 class="card-title fs-4">Paiement sécurisé</h3>
+                        <p class="card-text text-muted">Vos paiements sont 100% sécurisés grâce à nos partenaires de confiance.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Retours & échanges -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card border-0 shadow-sm h-100 p-4">
+                    <div class="card-body">
+                        <i class="fas fa-exchange-alt fa-3x text-dark mb-3"></i>
+                        <h3 class="card-title fs-4">Retours & échanges</h3>
+                        <p class="card-text text-muted">Bénéficiez de retours et échanges gratuits sous 30 jours après réception.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  </main>
+
+  <!-- Pied de Page -->
+  <footer class="footer">
+    <p>&copy; 2024 Bijoux Élégance. Tous droits réservés.</p>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+
+<!-- script carosel -->
+<script>
+    var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExample'), {
+        interval: 2000,  // Intervalle entre chaque slide (en ms)
+        ride: 'carousel' // Lancement automatique du carrousel
+    });
+</script>
+</html>
